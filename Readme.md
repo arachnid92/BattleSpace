@@ -36,9 +36,9 @@ y LWJGL. Fue creado para una tarea de un curso de Computación Gráfica de la
 Universidad de Chile.
 
 Para compilar el juego es necesario bajar el código fuente presente en esta
-página, y además conseguir copias de las librerías Slick2D y LWJGL. Luego, en
-Eclipse o BlueJ es necesario especificar que estas librerías son necesarias
-para la compilación.
+página, y luego configurar Eclipse o BlueJ para que utilicen las librerías
+incluídas en la carpeta "lib". Cómo hacer esto está detallado en:
+<http://www.slick2d.org/wiki/index.php/Setting_up_Slick2D_with-Eclipse>
 
 En este repositorio también existen ejecutables de la versión más reciente 
 para Linux y Windows.
