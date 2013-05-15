@@ -3,7 +3,7 @@ Para compilar el juego:
 1. Se debe tener instalada la versión 1.6 o 1.7 del Java Development Kit, ya sea la versión de Oracle o OpenJDK.
 2. En Eclipse, es cosa de ir a File -> Import -> Existing Proyects Into Workspace -> Buscamos la carpeta que contiene todos los archivos, seleccionamos "Juego_Graficas" y le ponemos OK.
 3. Si al abrirlo nos tira error es porque tenemos mal configurado el JDK. Hacemos click derecho en el proyecto "Juego_Graficas" -> Propierties.
-4. Vamos a "Java Build Path" -> Libraries. Seleccionamos la libreria que diga algo así como "JRE 1.7" y hacemos click en eliminar.
+4. Vamos a "Java Build Path" -> Libraries. Seleccionamos la libreria que diga algo así como "JRE System Library [JavaSE-1.7] (unbound)" y hacemos click en eliminar.
 5. Luego hacemos click en Add Library -> JRE System Library -> Workspace Default... -> Finish.
 6. Luego, ejecutamos el proyecto. Si Eclipse muestra una ventana preguntando que clase ejecutar, buscamos ShipGame y hacemos doble click.
 7. ???
