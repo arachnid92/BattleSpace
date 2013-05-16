@@ -14,64 +14,75 @@
 
 
     BattleSpace es software libre: puede ser redistribu√≠do y/o modificado
-    bajo los t√©rminos de la GNU General Public License, publicada por la
-    Free Software Foundation, ya sea la versi√≥n 3 de la Licencia, o, (a
-    discreci√≥n) cualquier versi√≥n posterior.
+    bajo los tÈrminos de la GNU General Public License, publicada por la
+    Free Software Foundation, ya sea la versiÛn 3 de la Licencia, o, (a
+    discreciÛn) cualquier versiÛn posterior.
 
-    BattleSpace es distribu√≠da con la esperanza de que sea √∫til, pero 
-    SIN GARANT√çA ALGUNA; ni siquiera la garant√≠a impl√≠cita de MERCANTA-
-    BILIDAD o APTITUD PARA UN FIN ESPEC√çFICO. Para m√°s detalles, ver la
+    BattleSpace es distribuÌda con la esperanza de que sea ˙til, pero 
+    SIN GARANT√ÕA ALGUNA; ni siquiera la garantÌ≠a implÌ≠cita de MERCANTA-
+    BILIDAD o APTITUD PARA UN FIN ESPECÕFICO. Para m·°s detalles, ver la
     GNU General Public License.
 
     Debe haber recibido una copia de la GNU General Public License junto
-    con BattleSpace. De no ser as√≠, vea <http://www.gnu.org/licenses/>.
+    con BattleSpace. De no ser asÌ, vea <http://www.gnu.org/licenses/>.
 
 
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
 Autor: Manuel Olgu√≠n
 
-BattleSpace es un juego escrito en Java, implementando las librer√≠as Slick2D
-y LWJGL. Fue creado para una tarea de un curso de Computaci√≥n Gr√°fica de la 
+BattleSpace es un juego escrito en Java, implementando las librerÌas Slick2D
+y LWJGL. Fue creado para una tarea de un curso de ComputaciÛn Gr·°fica de la 
 Universidad de Chile.
 
-Para compilar el juego es necesario bajar el c√≥digo fuente presente en esta
-p√°gina, y luego configurar Eclipse o BlueJ para que utilicen las librer√≠as
-inclu√≠das en la carpeta "lib". C√≥mo hacer esto est√° detallado en:
-<http://www.slick2d.org/wiki/index.php/Setting_up_Slick2D_with-Eclipse>
+Para compilar el juego:
 
-En este repositorio tambi√©n existen ejecutables de la versi√≥n m√°s reciente 
-para Linux y Windows.
+1. Se debe tener instalada la versiÛn 1.6 o 1.7 del Java Development Kit, ya sea la versiÛn de Oracle u OpenJDK.
+2. En Eclipse, es cosa de ir a File -> Import -> Existing Proyects Into Workspace -> Buscamos la carpeta que contiene todos los archivos, seleccionamos "Juego_Graficas" y le ponemos OK.
+3. Si al abrirlo nos tira error es porque tenemos mal configurado el JDK. Hacemos click derecho en el proyecto "Juego_Graficas" -> Propierties.
+4. Vamos a "Java Build Path" -> Libraries. Seleccionamos la libreria que diga algo asÌ como "JRE System Library [JavaSE-1.7] (unbound)" y hacemos click en eliminar.
+5. Luego hacemos click en Add Library -> JRE System Library -> Workspace Default... -> Finish.
+	5a. Adem·s, si estamos en Windows, debemos volver a Java Build Path -> Libraries. 
+	5b. Hacemos click en la flecha a la izquierda de "lwjgl.jar".
+	5c. Doble click en "Native library location: Juego_Graficas..."
+	5d. En la ventana que se abre, seleccionamos el botÛn "workspace".
+	5e. Navegamos a Juego_Graficas -> lib -> Windows y presionamos OK.
+6. Luego, ejecutamos el proyecto. Si Eclipse muestra una ventana preguntando que clase ejecutar, buscamos ShipGame y hacemos doble click.
+7. ???
+8. Profit!!!
+
+
+TambiÈn se adjuntan ejecutables para Windows y Linux.
 
 
 INSTRUCCIONES DE JUEGO:
 
-Es un juego de dos jugadores. La finalidad del juego es, a trav√©s de el arma
+Es un juego de dos jugadores. La finalidad del juego es, a travÈs de el arma
 propia de cada nave, destruir la nave enemiga; el problema es que las naves
-son invulnerables por delante, y la √∫nica manera de causar da√±o a la nave 
-enemiga es dispar√°ndole en la parte posterior.
+son invulnerables por delante, y la ˙nica manera de causar daÒo a la nave 
+enemiga es dispar·ndole en la parte posterior.
 
-Cada nave tambi√©n tiene asociado un contador de combustible. Si este llega a 
-cero, la nave no podr√° seguir movi√©ndose. En el mapa aparecer√°n oportunamente
-contenedores de combustible para rellenar los estanques de las naves. Tambi√©n
+Cada nave tambiÈn tiene asociado un contador de combustible. Si este llega a 
+cero, la nave no podrÈ seguir moviÈndose. En el mapa aparecer·n oportunamente
+contenedores de combustible para rellenar los estanques de las naves. TambiÈn
 apareceran vidas adicionales y powerups para aumentar la potencia del arma
 de cada nave.
 
-En el mapa tambi√©n existen asteroides que da√±an las naves al chocar con ellas.
+En el mapa tambiÈn existen asteroides que daÒan las naves al chocar con ellas.
 
 CONTROLES:
 
 FLECHA ARRIBA:	Rojo acelera.
-FLECHA ABAJO:	Rojo retrocede.
-FLECHA IZQ:	Rojo gira izquierda.
-FLECHA DER:	Rojo gira derecha.
-CONTROL DER:	Rojo dispara.
+FLECHA ABAJO:		Rojo retrocede.
+FLECHA IZQ:		Rojo gira izquierda.
+FLECHA DER:		Rojo gira derecha.
+CONTROL DER:		Rojo dispara.
 
-W:		Azul acelera.
-S:		Azul retrocede.
-A:		Azul gira izquierda.
-D.		Azul gira derecha.
-CONTROL IZQ:	Azul dispara.
+W:				Azul acelera.
+S:				Azul retrocede.
+A:				Azul gira izquierda.
+D.				Azul gira derecha.
+CONTROL IZQ:		Azul dispara.
 
-P:		Pausa	 
+P:				Pausa	 
 
